@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --treeBg: #101010;
+  --darkBg: #1C1C1C;
+  --borders: #363535;
+  --foreground: #D6D6D6;
+  --secondaryForeground: #A5A5A5;
+}
+
+body {
+  background-color: var(--darkBg);
+  color: var(--foreground);
+}
+
+::-webkit-scrollbar {
+   @apply w-1;
+    /* Customize the scrollbar with your own CSS here */
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[var(--darkBg)] rounded-lg
+    /* Customize the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[var(--borders)] rounded-lg
+    /* Customize the scrollbar thumb */
+}
